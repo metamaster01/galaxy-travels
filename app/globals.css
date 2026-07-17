@@ -1,0 +1,95 @@
+/* @import "tailwindcss";
+
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  
+  --color-cream: #f6f1e6;       
+  --color-cream-dim: #ece4d2;   
+  --color-forest: #16231a;      
+  --color-forest-light: #26382a;
+  --color-olive: #5c6b47;       
+  --color-gold: #c9a24b;       
+  --color-ink: #16140f;         
+  --color-whatsapp: #25d366;
+
+  --shadow-nav: 0 8px 30px -12px rgb(0 0 0 / 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+} */
+
+
+@import "tailwindcss";
+
+/*
+  Galaxy Travels — design tokens
+  Display: Fraunces (elegant serif, real italic swash — matches the "without limits" treatment)
+  Body/UI:  Manrope (warm geometric sans, distinct from the default Inter reach)
+*/
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  /* Core palette */
+  --color-cream: #f6f1e6;       /* nav pill / light surfaces */
+  --color-cream-dim: #ece4d2;   /* hairlines on cream */
+  --color-forest: #16231a;      /* primary dark — CTA, overlay base */
+  --color-forest-light: #26382a;
+  --color-olive: #5c6b47;       /* secondary green accents */
+  --color-gold: #c9a24b;        /* logo, stars, eyebrow accents */
+  --color-ink: #16140f;         /* body text on light */
+  --color-whatsapp: #25d366;
+
+  /* Dark-section palette — used by sections that sit on a near-black canvas
+     (Featured Packages, Why Us) rather than the cream hero surface. */
+  --color-night: #0b0c0f;
+  --color-night-card: #ffffff0a;
+  --color-night-border: #ffffff14;
+  --color-night-border-strong: #ffffff24;
+
+  --shadow-nav: 0 8px 30px -12px rgb(0 0 0 / 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Respect reduced-motion preferences across the collage + text reveals */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
