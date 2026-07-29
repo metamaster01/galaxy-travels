@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 // Variable fonts, only the weights/styles we actually use
 const fraunces = Fraunces({
@@ -30,7 +32,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        
+        {children}
+        
+        <Footer />
+        </body>
     </html>
   );
 }
