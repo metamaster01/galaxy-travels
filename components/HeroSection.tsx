@@ -20,9 +20,9 @@ const rise = {
 };
 
 const STATS = [
-  { icon: "★", label: "4.9 stars (541k Reviews)" },
-  { icon: "◐", label: "50k travellers" },
-  { icon: "◎", label: "1+ million followers" },
+  { icon: "★", label: "4.7 stars (5k Reviews)" },
+  { icon: "◐", label: "5k travellers" },
+  { icon: "◎", label: "10k+ followers" },
 ];
 
 export function Hero() {

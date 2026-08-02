@@ -82,8 +82,10 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-2 border-t border-night-border py-6 text-center font-sans text-xs text-cream/40 sm:flex-row sm:justify-between sm:text-left">
-          <p>&copy; {new Date().getFullYear()} Galaxy Travels. All rights reserved.</p>
-          <p>123 Nebula Heights, Orion Way, Space City.</p>
+          <p>&copy; {new Date().getFullYear()} <a href="https://metamaster.in" className="text-gold hover:underline">
+            Meta Master
+          </a>. All rights reserved.</p>
+          <p>Delhi, India.</p>
         </div>
       </div>
     </footer>

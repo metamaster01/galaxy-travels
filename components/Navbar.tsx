@@ -5,11 +5,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { WhatsAppIcon } from "./icons/WhatsappIcon";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "Destinations", href: "#destinations" },
-  { label: "Offers", href: "#offers" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Destinations", href: "/#destinations" },
+  { label: "Offers", href: "/#offers" },
+  { label: "Reviews", href: "/#reviews" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const WHATSAPP_NUMBER = "10000000000"; // TODO: replace with the real number
@@ -42,7 +42,7 @@ export function Navbar() {
 
         {/* Logo (center) */}
         <a
-          href="#home"
+          href="/#home"
           className="flex shrink-0 items-center gap-2 px-1 font-display text-lg tracking-tight text-forest sm:text-xl"
         >
           <span aria-hidden="true" className="text-gold">
